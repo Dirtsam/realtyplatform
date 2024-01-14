@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Realtyplatform</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.jpg" alt="brand-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tel:+9999049757">999-9049-757</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link whatsapp" href="https://wa.me/919999049757"
+                  ><img src="./img/whatsapp.gif" alt="whatsapp-icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container img-container">
+        <div class="hero-container">
+          <h1>
+            Find the <span class="pri-color">Real Estate</span> that suits you.
+          </h1>
+          <p>
+            Our mission is to make your real estate experience <br />
+            smooth and fulfilling as possible .
+          </p>
+          <!-- <form action="#">
+            <div class="email-div">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="sanjay13wan@gmail.com"
+              />
+              <button type="submit" class="hero-btn">Let's go</button>
+            </div>
+          </form> -->
+          <!-- Button trigger modal -->
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="hero-sec-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Let's talk Business
+          </button>
+
+          <!-- Modal -->
+
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">
+                    Get in touch
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form
+                    class="box"
+                    onsubmit="sendNum(); reset(); return false;"
+                  >
+                    <h3>Realty Platform</h3>
+                    <div class="name">
+                      <input
+                        type="text"
+                        placeholder="name"
+                        id="name"
+                        required
+                      />
+                    </div>
+                    <div class="phone">
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        id="phone"
+                        required
+                      />
+                    </div>
+                    <button type="submit" onclick="message()" class="btn">
+                      Let's go
+                    </button>
+                  </form>
+                  <div class="message">
+                    <div class="success" id="successMsg">
+                      W'll get back to you soon!
+                    </div>
+                    <div class="danger" id="alertId">Field can't be empty</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-whtsp-container">
+        <a href="https://wa.me/919999049757">
+          <img src="./img/whatsapp.gif" alt="whatsapp-icon" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Showcase section -->
+    <section class="showcase-section" id="project">
+      <div class="container flexbox-container">
+        <div class="flex-item">
+          <small>Featured Properties</small>
+          <h1>
+            We provide right choice of <span class="pri-color">properties</span>
+          </h1>
+        </div>
+        <div class="flex-item">
+          <p>
+            One shall ticking very shall on expected a ukewise, or to best
+            window there’s the clarinet value is world his of my buisness, of
+            headline he the to as the question.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <small>POPULAR</small>
+        <h2>Featured Properties</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-img-top"
+                  src="./img/Ashiana_amarah.jpeg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <small class="card-title">Project Name</small>
+                <h2>Ashiana Amarah Phase-lll</h2>
+                <hr />
+                <small>Address</small>
+                <h2>Sector 93, Gurugram</h2>
+              </div>
+              <a href="#contact" class="accent-btn">Know More</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-img-top"
+                  src="./img/com-img3_leaf.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <small class="card-title">Project Name</small>
+                <h2>The Leaf Mall</h2>
+                <hr />
+                <small>Address</small>
+                <h2>Sector 34,Sohna Road, South of Gurugram</h2>
+              </div>
+              <a href="#contact" class="accent-btn">Know More</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-img">
+                <img
+                  class="card-img-top"
+                  src="./img/Melia.jpeg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <small class="card-title">Project Name</small>
+                <h2>The Melia, Silverglades</h2>
+                <hr />
+                <small>Address</small>
+                <h2>Sector 35,Sohna Road, South of Gurugram</h2>
+              </div>
+              <a href="#contact" class="accent-btn">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section-->
+    <section class="testimonial">
+      <div class="container testimonial-container">
+        <h1>What our <span class="pri-color">Clients</span> Says</h1>
+        <div class="testimonial-content">
+          <div class="testimonial-slide">
+            <img
+              src="./img/Amit_sharma.jpg"
+              alt="Client 1"
+              class="client-image"
+            />
+            <p>Amit Sharma</p>
+            <p class="descripition">
+              “ One word to justify Rohit and his team is Exceptional. They are
+              humble and experts in the field and very rare to found the genuine
+              persons in real estate field. Highly recommended to speak with
+              them if you are thinking of buying or selling any property in
+              Gurgaon and Dwarka Expressway. ”
+            </p>
+          </div>
+          <div class="testimonial-slide">
+            <img
+              src="./img/trithanker.jpg"
+              alt="Client 2"
+              class="client-image"
+            />
+            <p>Trithankar Chakraborty</p>
+            <p class="descripition">
+              “ For me Realty Platform is 2nd home. The owners Pinki, Rohit, Tej
+              they are awesome. Even their staff, I can mention another Rohit,
+              just simply will be with you at any point you need support.
+              Recently, I have invested in one of the GGN projects through them.
+              I simply did not do anything. They did it all on my behalf. I
+              recommended to one of my very close friends, he is also having the
+              same view. I strongly recommend Realty Platform for any help for
+              Purchase, sales etc. in specially GGN. Wish them all the very
+              best. ”
+            </p>
+          </div>
+          <div class="testimonial-slide">
+            <img src="./img/island.jpg" alt="Client 3" class="client-image" />
+            <p>Island</p>
+            <p class="descripition">
+              “ We had purchased a flat with the help of Pinky and it was a
+              wonderful experience. Service is excellent and have guided us
+              well. She made sure everything happened smoothly. Highly recommend
+              realty platform if you planning to buy new property. ”
+            </p>
+          </div>
+          <div class="testimonial-slide">
+            <img src="./img/prasubh.jpg" alt="Client 4" class="client-image" />
+            <p>Prasubh</p>
+            <p class="descripition">
+              “I had a wonderful experience with Realty Platform. They have
+              ample options to offer in almost all kinds of properties be it a
+              residential or commercial. I am satisfied with their services. ”
+            </p>
+          </div>
+          <div class="testimonial-slide">
+            <img src="./img/Ajita.jpeg" alt="Client 5" class="client-image" />
+            <p>Ajita Srivastava</p>
+            <p class="descripition">
+              “Honest people and professional services if you want to buy a
+              property in Gurgaon.. ”
+            </p>
+          </div>
+          <div class="testimonial-slide">
+            <img
+              src="./img/Saurabh gomber.jpeg"
+              alt="Client 6"
+              class="client-image"
+            />
+            <p>Saurabh Gomber</p>
+            <p class="descripition">
+              “Great experience in property purchase. You always get genuine
+              advise. ”
+            </p>
+          </div>
+          <!-- Add more testimonial slides as needed -->
+        </div>
+        <div class="arrow arrow-left" onclick="prevSlide()">&#10094;</div>
+        <div class="arrow arrow-right" onclick="nextSlide()">&#10095;</div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section" id="about-us">
+      <div class="container">
+        <h1>About<span class="pri-color">Us</span></h1>
+        <div>
+          <h2>15+ years of helping you find the right properties</h2>
+          <p>
+            Our <strong>mission</strong> is to be the most effective real estate
+            platform by offering a transparent model that allows to find your
+            dream home and the best investment in terms of best ROI. We
+            specialized in <strong class="pri-color">Residentials</strong> and
+            <strong class="pri-color">Commercial</strong> properties in
+            Gurugram. We believe to deliver the best services to the customers
+            for long term mutual benifites
+          </p>
+          <a href="#" class="btn">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer" id="contact">
+      <div class="container flexbox-container footer-flexbox">
+        <div class="form-container">
+          <h3>Leave Me a Message</h3>
+          <form
+            class="contact-form"
+            onsubmit="contactUs(); reset(); return false;"
+          >
+            <div class="name-container">
+              <label for="Name">Full Name</label>
+              <input id="fName" class="fName" type="text" required />
+            </div>
+            <div class="email-container">
+              <label for="Name">Email</label>
+              <input id="email" class="email" type="email" required />
+            </div>
+            <div class="name-container">
+              <label for="Number">Number</label>
+              <input id="contactNum" class="phone" type="tel" required />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div>
+          <h3>Email / Call Me</h3>
+          <ul>
+            <li>Tel : 931-144-4719</li>
+            <li>Email : Realtyplatform@co.in</li>
+            <li>Address : Emaar Emerald Plaza, Sector 65, Gurugram, Haryana</li>
+          </ul>
+          <div class="social_links">
+            <a><img src="./img/twitter.svg" alt="twitter-icone" /></a>
+            <a><img src="./img/facebook.svg" alt="fb-icon" /></a>
+            <a><img src="./img/linkedin.svg" alt="linkedin-icon" /></a>
+          </div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Projects</a>
+        </div>
+      </div>
+      <div class="container">
+        <span>© Copyright Realtyplatform | All Rights Reserved</span>
+      </div>
+      <div class="arrow-top">
+        <a href="#home"><img src="./img/up-arrow.gif" alt="arrow_icon" /></a>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BWD5TZBJ32"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-BWD5TZBJ32");
+    </script>
+
+    <!-- smptjs
+ -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
