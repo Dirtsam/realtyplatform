@@ -39,7 +39,7 @@ function sendNum() {
 
   let body = "Full Name : " + clientName + " <br> Phone Number: " + phoneNumber;
   Email.send({
-    SecureToken: "bcebc9fe-2658-48e0-a638-38678f194386",
+    SecureToken: "898ec20a-3a60-467f-b068-2e8ff464964f",
     To: "rohit.realtyplatform@gmail.com",
     From: "sanjay13realty@gmail.com",
     Subject: "New Enquiry",
