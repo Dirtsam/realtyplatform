@@ -39,7 +39,7 @@ function sendNum() {
 
   let body = "Full Name : " + clientName + " <br> Phone Number: " + phoneNumber;
   Email.send({
-    SecureToken: "5a726792-e753-4749-865d-d3cc0f5d8e92",
+    SecureToken: "67a9a1fb-6c1f-46dc-a382-456fa05cb2a3",
     To: "sanjay13realty@gmail.com",
     From: "sanjay13realty@gmail.com",
     Subject: "New Enquiry",
@@ -86,7 +86,7 @@ function contactUs() {
     " <br> Contact Number : " +
     contactNum;
   Email.send({
-    SecureToken: "5a726792-e753-4749-865d-d3cc0f5d8e92",
+    SecureToken: "67a9a1fb-6c1f-46dc-a382-456fa05cb2a3",
     To: "sanjay13realty@gmail.com",
     From: "sanjay13realty@gmail.com",
     Subject: "Filled Contact Form",
